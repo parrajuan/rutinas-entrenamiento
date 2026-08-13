@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutinas de Entrenamiento A4 - Oficina</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado de la Aplicación (Solo visible en pantalla) -->
+  <header class="app-header">
+    <h1>Hojas de Entrenamiento para Oficina</h1>
+    <p>Diseño premium optimizado en formato **A4 Horizontal (Landscape)** para imprimir y pegar en tu pared. Asegúrate de configurar la impresión en orientación horizontal, tamaño A4 y habilitar "Gráficos de fondo" en tu navegador.</p>
+    <div class="controls">
+      <button class="btn btn-primary" onclick="window.print()">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.89l-2.4 2.4a2.25 2.25 0 000 3.18l.9-.9a2.25 2.25 0 003.18 0l2.4-2.4M16.5 13.5v.75m0 3v.75m0-9l3 3m-3-3L12 3m4.5 6H9M9 9a3 3 0 000 6h.008a3 3 0 00.002-6H9z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-1.5-1.5m-3-3l-1.5-1.5m6 6H5.25A2.25 2.25 0 013 17.25V8.25A2.25 2.25 0 015.25 6H10l1.5 1.5h7.25A2.25 2.25 0 0121 9.75v7.5a2.25 2.25 0 01-2.25 2.25z"></path>
+        </svg>
+        Imprimir Hojas (PDF)
+      </button>
+    </div>
+  </header>
+
+  <!-- Contenedor de las Hojas de Entrenamiento -->
+  <main class="sheets-container">
+
+    <!-- HOJA 1: Rutina Mínima Diaria -->
+    <section class="sheet sheet-rutina-diaria">
+      
+      <!-- Encabezado de la rutina (Horizontal) -->
+      <div class="sheet-header">
+        <div class="header-left">
+          <span class="sheet-badge-type">Salud y Movilidad</span>
+          <div class="sheet-title-group">
+            <h2 class="sheet-title">Rutina Mínima Diaria</h2>
+            <span class="sheet-duration">⏱️ 8 a 10 min total</span>
+          </div>
+        </div>
+        <div class="sheet-meta-grid">
+          <div class="meta-item">
+            <strong>Frecuencia</strong>
+            <span>Lunes a Viernes (Ideal al levantarse o antes de entrenar)</span>
+          </div>
+          <div class="meta-item">
+            <strong>Objetivo</strong>
+            <span>Preparación articular, descompresión de columna y activación del core</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista de Ejercicios (Grid 2x2) -->
+      <div class="exercises-list">
+        
+        <!-- Ejercicio 1 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/cat-cow-stretch.webp" alt="Gato - Camello">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">1. Gato - Camello (Cat-Cow)</h3>
+              <span class="exercise-prescrip">10 a 12 reps lentas</span>
+            </div>
+            <p class="exercise-instructions">Sincroniza la respiración inhalando al subir y exhalando al bajar la columna.</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 2 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/dynamic-90-90-hip-twist.webp" alt="Movilidad 90/90 de Cadera">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">2. Movilidad 90/90 de Cadera</h3>
+              <span class="exercise-prescrip">45 a 60s por lado</span>
+            </div>
+            <p class="exercise-instructions">Espalda erguida e inclinación suave sobre la pierna delantera.</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 3 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/low-glute-bridge-on-floor.webp" alt="Puente de Glúteo">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">3. Puente de Glúteo (Glute Bridge)</h3>
+              <span class="exercise-prescrip">2 series x 12 reps</span>
+            </div>
+            <p class="exercise-instructions">Sostén 2 segundos la contracción arriba en cada repetición.</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 4 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/front-plank.webp" alt="Plancha Abdominal Tradicional">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">4. Plancha Tradicional</h3>
+              <span class="exercise-prescrip">2 series x 30 a 45s</span>
+            </div>
+            <p class="exercise-instructions">Mantén el cuerpo alineado en bloque apoyando antebrazos.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pie de página -->
+      <footer class="sheet-footer">
+        <span class="footer-decor">Rutinas de Oficina - Salud & Rendimiento</span>
+        <span>HOJA 1</span>
+      </footer>
+
+    </section>
+
+    <!-- HOJA 2: Protocolo de Descarga Post-Fútbol -->
+    <section class="sheet sheet-rutina-futbol">
+      
+      <!-- Encabezado de la rutina (Horizontal) -->
+      <div class="sheet-header">
+        <div class="header-left">
+          <span class="sheet-badge-type">Recuperación y Descarga</span>
+          <div class="sheet-title-group">
+            <h2 class="sheet-title">Protocolo Post-Fútbol</h2>
+            <span class="sheet-duration">⏱️ 20 a 25 min total</span>
+          </div>
+        </div>
+        <div class="sheet-meta-grid">
+          <div class="meta-item">
+            <strong>Frecuencia</strong>
+            <span>Día del partido o día posterior (Día +1)</span>
+          </div>
+          <div class="meta-item">
+            <strong>Objetivo</strong>
+            <span>Drenar inflamación, aliviar contracturas y dolor muscular sin recargar gemelos</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista de Ejercicios (Grid 2x2) -->
+      <div class="exercises-list">
+        
+        <!-- Ejercicio 1 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/roll-hamstrings-sitting-on-floor.webp" alt="Auto-Masaje Foam Roller">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">1. Auto-Masaje (Foam Roller)</h3>
+              <span class="exercise-prescrip">60s por zona</span>
+            </div>
+            <p class="exercise-instructions">Gemelos, isquiotibiales, cuádriceps y glúteos (20s fijos en puntos de dolor).</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 2 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/high-knee-tap.jpg" alt="Elevaciones de Rodilla Lentas">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">2. Rodilla Lentas (High Knee)</h3>
+              <span class="exercise-prescrip">12 a 15 min continuos</span>
+            </div>
+            <p class="exercise-instructions">Ritmo suave, tocando con la mano. Apoyo de talón y planta (cero salto).</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 3 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/bulgarian-split-squat.webp" alt="Sentadilla Búlgara">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">3. Sentadilla Búlgara</h3>
+              <span class="exercise-prescrip">3 series x 10 reps/pierna</span>
+            </div>
+            <p class="exercise-instructions">Pie trasero en silla, desciende la cadera de forma vertical.</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 4 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/side-plank.webp" alt="Plancha Lateral">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">4. Plancha Lateral</h3>
+              <span class="exercise-prescrip">3 series x 30s por lado</span>
+            </div>
+            <p class="exercise-instructions">Antebrazo apoyado alineando cabeza, cadera y tobillos.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pie de página -->
+      <footer class="sheet-footer">
+        <span class="footer-decor">Rutinas de Oficina - Salud & Rendimiento</span>
+        <span>HOJA 2</span>
+      </footer>
+
+    </section>
+
+    <!-- HOJA 3: Calentamiento Dinámico para Antes de Trotar -->
+    <section class="sheet sheet-rutina-trote">
+      
+      <!-- Encabezado de la rutina (Horizontal) -->
+      <div class="sheet-header">
+        <div class="header-left">
+          <span class="sheet-badge-type">Activación Cardio y Tren Inferior</span>
+          <div class="sheet-title-group">
+            <h2 class="sheet-title">Pre-Trote Dinámico</h2>
+            <span class="sheet-duration">⏱️ 6 a 8 min total</span>
+          </div>
+        </div>
+        <div class="sheet-meta-grid">
+          <div class="meta-item">
+            <strong>Frecuencia</strong>
+            <span>Antes de trotar o realizar entrenamientos de carrera</span>
+          </div>
+          <div class="meta-item">
+            <strong>Objetivo</strong>
+            <span>Movilidad dinámica, elasticidad muscular y estimulación cardiopulmonar inicial</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista de Ejercicios (Grid 2x2) -->
+      <div class="exercises-list">
+        
+        <!-- Ejercicio 1 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/back-forward-leg-swings.jpg" alt="Balanceos de Pierna">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">1. Balanceos de Pierna (Leg Swings)</h3>
+              <span class="exercise-prescrip">12 reps por pierna</span>
+            </div>
+            <p class="exercise-instructions">De pie apoyando mano en pared, balancea la pierna adelante/atrás y luego lado a lado.</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 2 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/knee-raise.webp" alt="Caminata abrazo de rodilla">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">2. Abrazo de Rodilla (Knee Hugs)</h3>
+              <span class="exercise-prescrip">10 reps totales</span>
+            </div>
+            <p class="exercise-instructions">Da un paso continuo, eleva la rodilla al pecho presionando 1 segundo con las manos y avanza.</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 3 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/lunge-with-twist.webp" alt="Zancada con rotación">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">3. Zancada con Rotación (Lunge)</h3>
+              <span class="exercise-prescrip">8 reps por lado</span>
+            </div>
+            <p class="exercise-instructions">Realiza una zancada profunda y gira el torso de forma controlada hacia la pierna delantera.</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 4 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/butt-kicks.webp" alt="Trote, Skipping y Talones">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">4. Skipping y Talones (Butt Kicks)</h3>
+              <span class="exercise-prescrip">2 min continuos</span>
+            </div>
+            <p class="exercise-instructions">Bloque alternando en el sitio trote suave, skipping de rodillas bajas y talones a glúteos.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pie de página -->
+      <footer class="sheet-footer">
+        <span class="footer-decor">Rutinas de Oficina - Salud & Rendimiento</span>
+        <span>HOJA 3</span>
+      </footer>
+
+    </section>
+
+    <!-- HOJA 4: Calentamiento Pre-Partido de Fútbol -->
+    <section class="sheet sheet-rutina-prefutbol">
+      
+      <!-- Encabezado de la rutina (Horizontal) -->
+      <div class="sheet-header">
+        <div class="header-left">
+          <span class="sheet-badge-type">Activación Articular y Potencia</span>
+          <div class="sheet-title-group">
+            <h2 class="sheet-title">Calentamiento Pre-Partido</h2>
+            <span class="sheet-duration">⏱️ 10 a 12 min total</span>
+          </div>
+        </div>
+        <div class="sheet-meta-grid">
+          <div class="meta-item">
+            <strong>Frecuencia</strong>
+            <span>Justo antes del partido o entrenamiento intenso en cancha</span>
+          </div>
+          <div class="meta-item">
+            <strong>Objetivo</strong>
+            <span>Despertar el sistema neuromuscular, reactivar tendones y preparar cambios de ritmo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista de Ejercicios (Grid 2x2) -->
+      <div class="exercises-list">
+        
+        <!-- Ejercicio 1 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/standing-open-the-gate-exercise-illustration-spotebi.png" alt="Apertura y cierre de cadera">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">1. Abrir/Cerrar Cadera (The Gate)</h3>
+              <span class="exercise-prescrip">10 reps por pierna</span>
+            </div>
+            <p class="exercise-instructions">Trote suave y fluido elevando rodilla y abriendo/cerrando la cadera hacia afuera y adentro.</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 2 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/shuffle.webp" alt="Desplazamientos laterales y frenada">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">2. Lateral y Frenada (Side Shuffle)</h3>
+              <span class="exercise-prescrip">6 reps por lado</span>
+            </div>
+            <p class="exercise-instructions">3-4 pasos laterales rápidos, frena bajando la cadera en sentadilla y cambia de sentido.</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 3 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/run.jpg" alt="Aceleraciones progresivas">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">3. Aceleraciones (Build-Up Sprints)</h3>
+              <span class="exercise-prescrip">3 a 4 pasadas</span>
+            </div>
+            <p class="exercise-instructions">Carreras cortas de 15-20m acelerando progresivamente del 50% al 90% y frenando suave.</p>
+          </div>
+        </article>
+
+        <!-- Ejercicio 4 -->
+        <article class="exercise-row">
+          <div class="exercise-image-wrapper">
+            <img class="exercise-image" src="images/single-leg-hopping.webp" alt="Rebotes a un pie">
+          </div>
+          <div class="exercise-info">
+            <div class="exercise-name-row">
+              <h3 class="exercise-name">4. Rebotes a un Pie (Pogo Hops)</h3>
+              <span class="exercise-prescrip">2 series x 5s por pierna</span>
+            </div>
+            <p class="exercise-instructions">Rebotes cortos en el sitio sobre una sola pierna para activar la reactividad del tendón.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pie de página -->
+      <footer class="sheet-footer">
+        <span class="footer-decor">Rutinas de Oficina - Salud & Rendimiento</span>
+        <span>HOJA 4</span>
+      </footer>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

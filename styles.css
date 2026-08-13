@@ -1,0 +1,503 @@
+/* 
+   CSS para Hojas de Entrenamiento A4 Horizontal (Landscape)
+   Optimizado para Vista Web y para Impresión Perfecta en A4 (297mm x 210mm)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-title: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Paleta General */
+  --bg-dark: #0f172a;
+  --bg-slate: #1e293b;
+  --text-dark: #0f172a;
+  --text-light: #f8fafc;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  
+  /* Rutina 1 (Mínima Diaria - Verde Esmeralda) */
+  --r1-primary: #0d9488;
+  --r1-primary-light: #ccfbf1;
+  --r1-accent: #0f766e;
+  
+  /* Rutina 2 (Descarga Fútbol - Azul/Indigo) */
+  --r2-primary: #3b82f6;
+  --r2-primary-light: #dbeafe;
+  --r2-accent: #1d4ed8;
+
+  /* Rutina 3 (Pre-Trote - Naranja) */
+  --r3-primary: #f59e0b;
+  --r3-primary-light: #fef3c7;
+  --r3-accent: #b45309;
+
+  /* Rutina 4 (Pre-Fútbol - Violeta/Púrpura) */
+  --r4-primary: #8b5cf6;
+  --r4-primary-light: #ede9fe;
+  --r4-accent: #6d28d9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  overflow-y: auto;
+}
+
+/* Interfaz Web: Encabezado y Controles */
+header.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+header.app-header h1 {
+  font-family: var(--font-title);
+  font-size: 2.3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+header.app-header p {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.controls {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.btn {
+  font-family: var(--font-title);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Contenedor de las Hojas */
+.sheets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1050px;
+  align-items: center;
+}
+
+/* Simulación de A4 Horizontal en Pantalla */
+.sheet {
+  background-color: #ffffff;
+  color: var(--text-dark);
+  width: 297mm;
+  height: 210mm;
+  padding: 8mm 10mm; /* Espaciado interno compacto para maximizar el espacio de imagen */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Borde superior decorativo */
+.sheet-rutina-diaria {
+  border-top: 8px solid var(--r1-primary);
+}
+
+.sheet-rutina-futbol {
+  border-top: 8px solid var(--r2-primary);
+}
+
+.sheet-rutina-trote {
+  border-top: 8px solid var(--r3-primary);
+}
+
+.sheet-rutina-prefutbol {
+  border-top: 8px solid var(--r4-primary);
+}
+
+/* Encabezado de la Hoja (Optimizado para Landscape) */
+.sheet-header {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sheet-badge-type {
+  align-self: flex-start;
+  font-family: var(--font-title);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.sheet-rutina-diaria .sheet-badge-type {
+  background-color: var(--r1-primary-light);
+  color: var(--r1-accent);
+}
+
+.sheet-rutina-futbol .sheet-badge-type {
+  background-color: var(--r2-primary-light);
+  color: var(--r2-accent);
+}
+
+.sheet-rutina-trote .sheet-badge-type {
+  background-color: var(--r3-primary-light);
+  color: var(--r3-accent);
+}
+
+.sheet-rutina-prefutbol .sheet-badge-type {
+  background-color: var(--r4-primary-light);
+  color: var(--r4-accent);
+}
+
+.sheet-title-group {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.sheet-title {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.sheet-duration {
+  font-family: var(--font-title);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+/* Grid de Metadata en la cabecera */
+.sheet-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  background-color: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #f1f5f9;
+  font-size: 0.8rem;
+  max-width: 60%;
+}
+
+.meta-item strong {
+  display: block;
+  font-family: var(--font-title);
+  color: #475569;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.meta-item span {
+  color: #334155;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Cuerpo de la Hoja - Grid de 2x2 para las tarjetas */
+.exercises-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  flex-grow: 1;
+}
+
+/* Tarjeta de Ejercicio */
+.exercise-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Imagen del Ejercicio (MUCHO más grande y centrada) */
+.exercise-image-wrapper {
+  width: 100%;
+  height: 175px; /* Altura base mayor */
+  flex-grow: 1; /* Se estira para ocupar todo el espacio libre de la tarjeta */
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.exercise-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Se escala ocupando el máximo espacio sin recortarse */
+}
+
+/* Info de Ejercicio en formato de tarjeta */
+.exercise-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.exercise-name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+
+.exercise-name {
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.exercise-prescrip {
+  font-family: var(--font-title);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.sheet-rutina-diaria .exercise-prescrip {
+  background-color: var(--r1-primary-light);
+  color: var(--r1-accent);
+}
+
+.sheet-rutina-futbol .exercise-prescrip {
+  background-color: var(--r2-primary-light);
+  color: var(--r2-accent);
+}
+
+.sheet-rutina-trote .exercise-prescrip {
+  background-color: var(--r3-primary-light);
+  color: var(--r3-accent);
+}
+
+.sheet-rutina-prefutbol .exercise-prescrip {
+  background-color: var(--r4-primary-light);
+  color: var(--r4-accent);
+}
+
+.exercise-instructions {
+  font-size: 0.76rem;
+  color: #475569;
+  line-height: 1.3;
+}
+
+/* Pie de Página de la Hoja */
+.sheet-footer {
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.footer-decor {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.sheet-rutina-diaria .footer-decor {
+  color: var(--r1-primary);
+}
+
+.sheet-rutina-futbol .footer-decor {
+  color: var(--r2-primary);
+}
+
+.sheet-rutina-trote .footer-decor {
+  color: var(--r3-primary);
+}
+
+.sheet-rutina-prefutbol .footer-decor {
+  color: var(--r4-primary);
+}
+
+/* ==========================================
+   ESTILOS DE IMPRESIÓN (Ctrl+P)
+   ========================================== */
+@media print {
+  body {
+    background-color: transparent !important;
+    background-image: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #000000 !important;
+  }
+
+  /* Ocultar elementos de la interfaz web */
+  header.app-header,
+  .controls {
+    display: none !important;
+  }
+
+  .sheets-container {
+    gap: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .sheet {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 297mm !important;
+    height: 210mm !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    padding: 8mm 10mm !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Evitar saltos de página extraños en elementos internos */
+  .sheet-header,
+  .exercise-row,
+  .sheet-footer {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Mantener colores de impresión exactos */
+  .sheet-rutina-diaria {
+    border-top: 8px solid var(--r1-primary) !important;
+  }
+
+  .sheet-rutina-futbol {
+    border-top: 8px solid var(--r2-primary) !important;
+  }
+
+  .sheet-rutina-trote {
+    border-top: 8px solid var(--r3-primary) !important;
+  }
+
+  .sheet-rutina-prefutbol {
+    border-top: 8px solid var(--r4-primary) !important;
+  }
+
+  .sheet-rutina-diaria .sheet-badge-type {
+    background-color: var(--r1-primary-light) !important;
+    color: var(--r1-accent) !important;
+  }
+
+  .sheet-rutina-futbol .sheet-badge-type {
+    background-color: var(--r2-primary-light) !important;
+    color: var(--r2-accent) !important;
+  }
+
+  .sheet-rutina-trote .sheet-badge-type {
+    background-color: var(--r3-primary-light) !important;
+    color: var(--r3-accent) !important;
+  }
+
+  .sheet-rutina-prefutbol .sheet-badge-type {
+    background-color: var(--r4-primary-light) !important;
+    color: var(--r4-accent) !important;
+  }
+
+  .sheet-rutina-diaria .exercise-prescrip {
+    background-color: var(--r1-primary-light) !important;
+    color: var(--r1-accent) !important;
+  }
+
+  .sheet-rutina-futbol .exercise-prescrip {
+    background-color: var(--r2-primary-light) !important;
+    color: var(--r2-accent) !important;
+  }
+
+  .sheet-rutina-trote .exercise-prescrip {
+    background-color: var(--r3-primary-light) !important;
+    color: var(--r3-accent) !important;
+  }
+
+  .sheet-rutina-prefutbol .exercise-prescrip {
+    background-color: var(--r4-primary-light) !important;
+    color: var(--r4-accent) !important;
+  }
+
+  .sheet-meta-grid {
+    background-color: #f8fafc !important;
+    border: 1px solid #f1f5f9 !important;
+  }
+}
